@@ -93,12 +93,7 @@ remove,OnePlus apps & features,com.oplus.tai.borderpresearch,Screen-edge researc
 remove,OnePlus apps & features,com.oppo.quicksearchbox,OnePlus global search (swipe down on home screen),Home-screen swipe search; Google search widget still works,
 remove,OnePlus preinstalled apps (uninstallable),andes.oplus.documentsreader,OnePlus document/PDF reader,Document reader; use Drive/Docs or any PDF app,reinstall from Play Store / App Market
 remove,OnePlus preinstalled apps (uninstallable),com.coloros.translate,OnePlus Translate,Translate app; use Google Translate,reinstall from Play Store / App Market
-remove,OnePlus preinstalled apps (uninstallable),com.oneplus.brickmode,Zen Mode (focus lock),Zen Mode,reinstall from Play Store / App Market
 remove,OnePlus preinstalled apps (uninstallable),com.oneplus.note,OnePlus Notes,Notes saved only in OnePlus Notes are deleted; export or sync first,reinstall from Play Store / App Market
-remove,OnePlus preinstalled apps (uninstallable),com.oneplus.soundrecorder,OnePlus Recorder,Recorder app; existing recordings stay as files,reinstall from Play Store / App Market
-remove,OnePlus preinstalled apps (uninstallable),com.oplus.consumerIRApp,IR Remote (TV remote),IR remote control,reinstall from Play Store / App Market
-remove,OnePlus preinstalled apps (uninstallable),net.oneplus.forums,OnePlus Community,Community app,reinstall from Play Store / App Market
-remove,OnePlus preinstalled apps (uninstallable),net.oneplus.widget,OnePlus widgets,OnePlus home-screen widgets,reinstall from Play Store / App Market
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.appmanager,Facebook's background installer/updater,Nothing; Facebook/Instagram update from Play Store,
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.services,Facebook background services,Nothing,
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.system,Facebook system installer,Nothing,
@@ -207,6 +202,11 @@ keep,Needed by your other apps,com.oplus.locationproxy,OnePlus location proxy,-,
 keep,Needed by your other apps,com.qualcomm.location,Qualcomm GPS assist,-,
 keep,OnePlus account & cloud,com.heytap.cloud,OnePlus Cloud,-,
 keep,OnePlus account & cloud,com.oneplus.account,OnePlus account,-,personal choice
+keep,OnePlus preinstalled apps (uninstallable),com.oneplus.brickmode,Zen Mode (focus lock),-,personal choice
+keep,OnePlus preinstalled apps (uninstallable),com.oneplus.soundrecorder,OnePlus Recorder,-,personal choice
+keep,OnePlus preinstalled apps (uninstallable),com.oplus.consumerIRApp,IR Remote (TV remote),-,personal choice
+keep,OnePlus preinstalled apps (uninstallable),net.oneplus.forums,OnePlus Community,-,personal choice
+keep,OnePlus preinstalled apps (uninstallable),net.oneplus.widget,OnePlus widgets,-,personal choice
 keep,Safety & emergency,com.android.cellbroadcastreceiver,Emergency alerts,-,
 keep,Safety & emergency,com.android.cellbroadcastreceiver.overlay.common,Emergency alerts config,-,
 keep,Safety & emergency,com.android.emergency,Emergency info + SOS,-,
