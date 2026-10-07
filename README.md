@@ -28,6 +28,7 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 
 ## Before you remove
 
+- `com.oneplus.note`: notes saved only in OnePlus Notes are deleted; export or sync first.
 - `com.android.contacts` / `com.android.incallui` are the OnePlus Phone and Contacts apps. Set Google Phone, Contacts and Messages as defaults first.
 - `com.oneplus.gallery` is kept: removing it breaks opening photos from the camera.
 - `later` rows (secure keyboard, live wallpapers, a Qualcomm secure-zone helper) are untested; apply with `./apply.py debloat --later`.
@@ -40,7 +41,7 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 
 ## My results (13s, 10 min each, right after unlock, no factory reset)
 
-137 packages removed, 5 disabled; 537 -> 400 packages; about 1.2 GB storage freed.
+145 packages removed, 5 disabled; 537 -> 392 packages; about 1.2 GB storage freed.
 The benchmark was taken after the first 122 removals.
 CPU system -16% avg, CPU spikes (top 5%) -17 to -21%, RAM P95 -23%, RAM avg -4%. Most of the gain is in the first minute after boot.
 Full table in `results/comparison.txt`.

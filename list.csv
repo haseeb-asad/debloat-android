@@ -91,6 +91,14 @@ remove,OnePlus apps & features,com.oplus.securityguard,Anti-fraud scanner (scam 
 remove,OnePlus apps & features,com.oplus.stdsp,App install screening / app detail pages,Extra install warnings,
 remove,OnePlus apps & features,com.oplus.tai.borderpresearch,Screen-edge research/AI service,Nothing visible,
 remove,OnePlus apps & features,com.oppo.quicksearchbox,OnePlus global search (swipe down on home screen),Home-screen swipe search; Google search widget still works,
+remove,OnePlus preinstalled apps (uninstallable),andes.oplus.documentsreader,OnePlus document/PDF reader,Document reader; use Drive/Docs or any PDF app,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),com.coloros.translate,OnePlus Translate,Translate app; use Google Translate,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),com.oneplus.brickmode,Zen Mode (focus lock),Zen Mode,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),com.oneplus.note,OnePlus Notes,Notes saved only in OnePlus Notes are deleted; export or sync first,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),com.oneplus.soundrecorder,OnePlus Recorder,Recorder app; existing recordings stay as files,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),com.oplus.consumerIRApp,IR Remote (TV remote),IR remote control,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),net.oneplus.forums,OnePlus Community,Community app,reinstall from Play Store / App Market
+remove,OnePlus preinstalled apps (uninstallable),net.oneplus.widget,OnePlus widgets,OnePlus home-screen widgets,reinstall from Play Store / App Market
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.appmanager,Facebook's background installer/updater,Nothing; Facebook/Instagram update from Play Store,
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.services,Facebook background services,Nothing,
 remove,Preinstalled Facebook / Microsoft helpers,com.facebook.system,Facebook system installer,Nothing,
@@ -170,6 +178,16 @@ keep,Casting & file sharing,com.oplus.remotecontrol,Remote control / device cont
 keep,Casting & file sharing,com.oplus.vdc,Virtual device connection (screen cast uses it),-,cast depends on it
 keep,Casting & file sharing,com.qualcomm.wfd.service,Miracast / Wi-Fi Display to TVs,-,
 keep,Google apps & features,com.android.bips,Built-in generic printer driver,Printing without a vendor plugin,personal choice
+keep,Kept by choice,com.android.chrome,Chrome,-,personal choice
+keep,Kept by choice,com.coloros.systemclone,System Cloner (second separate system),-,personal choice
+keep,Kept by choice,com.coloros.weather.service,Weather data service behind the widget,-,
+keep,Kept by choice,com.google.android.apps.wellbeing,"Digital Wellbeing, Bedtime, Focus",-,personal choice
+keep,Kept by choice,com.google.android.projection.gearhead,Android Auto,-,personal choice
+keep,Kept by choice,com.google.android.youtube,YouTube,-,personal choice
+keep,Kept by choice,com.oplus.aiwriter,AI Writer,-,personal choice
+keep,Kept by choice,com.oplus.games,Games + Game Bar,-,Game Bar; hard to restore per commenters
+keep,Kept by choice,com.oplus.phonemanager,"Phone Manager (cleaner, permissions)",-,personal choice
+keep,Kept by choice,net.oneplus.weather,OnePlus Weather,-,personal choice
 keep,Look & feel,com.google.android.overlay.modules.captiveportallogin.forframework,Config for the hotel Wi-Fi login page,Author tested fine; restore if hotel Wi-Fi login stops popping up,personal choice
 keep,Look & feel,com.oplus.audio.effectcenter,Sound effects / audio tuning,-,
 keep,Look & feel,com.oplus.eyeprotect,Eye Comfort / night filter,-,
@@ -199,13 +217,3 @@ keep,Safety & emergency,com.google.android.cellbroadcastreceiver.overlay,Emergen
 keep,Safety & emergency,com.google.android.cellbroadcastservice,Emergency alerts service,-,
 keep,Safety & emergency,com.google.android.cellbroadcastservice.overlay,Emergency alerts config,-,
 keep,Safety & emergency,com.google.android.overlay.gmsconfig.personalsafety,Personal Safety config,-,
-keep,Kept by choice,com.android.chrome,Chrome,-,personal choice
-keep,Kept by choice,com.coloros.systemclone,System Cloner (second separate system),-,personal choice
-keep,Kept by choice,com.coloros.weather.service,Weather data service behind the widget,-,
-keep,Kept by choice,com.google.android.apps.wellbeing,"Digital Wellbeing, Bedtime, Focus",-,personal choice
-keep,Kept by choice,com.google.android.projection.gearhead,Android Auto,-,personal choice
-keep,Kept by choice,com.google.android.youtube,YouTube,-,personal choice
-keep,Kept by choice,com.oplus.aiwriter,AI Writer,-,personal choice
-keep,Kept by choice,com.oplus.games,Games + Game Bar,-,Game Bar; hard to restore per commenters
-keep,Kept by choice,com.oplus.phonemanager,"Phone Manager (cleaner, permissions)",-,personal choice
-keep,Kept by choice,net.oneplus.weather,OnePlus Weather,-,personal choice
