@@ -141,11 +141,10 @@ remove,Tracking & telemetry,com.qualcomm.qti.devicestatisticsservice,Qualcomm de
 disable,Disable only (easy to switch back on),com.android.DeviceAsWebcam,Use phone as a USB webcam,Webcam mode until re-enabled,
 disable,Disable only (easy to switch back on),com.coloros.compass2,Compass + bubble level,Compass until re-enabled,
 disable,Disable only (easy to switch back on),com.oplus.melody,OnePlus earbuds setup/settings,OnePlus Buds settings until re-enabled,
-disable,Disable only (easy to switch back on),com.oplus.multiapp,App Cloner (two WhatsApps etc.),App cloning until re-enabled,author: can't disable after 16.0.7
 disable,From your phone (not in author's list),com.heytap.market,OnePlus App Market (already disabled),Nothing,can't be uninstalled (internal error); stays disabled
-later,Look & feel,com.android.wallpaper.livepicker,Live wallpaper picker,Live wallpapers,pass 2: test after the first round
-later,Qualcomm chip extras,com.qualcomm.qti.qms.service.trustzoneaccess,Qualcomm secure-zone helper for some carrier/DRM apps,Author tested fine; restore if a banking/DRM app complains,pass 2: test banking/DRM apps
-later,Security,com.oplus.securitykeyboard,Secure keyboard that pops up for password fields,Gboard used for passwords instead,pass 2: test whether Gboard shows normally
+after,Look & feel,com.android.wallpaper.livepicker,Live wallpaper picker,Live wallpapers,pass 2: test after the first round
+after,Qualcomm chip extras,com.qualcomm.qti.qms.service.trustzoneaccess,Qualcomm secure-zone helper for some carrier/DRM apps,Author tested fine; restore if a banking/DRM app complains,pass 2: test banking/DRM apps
+after,Security,com.oplus.securitykeyboard,Secure keyboard that pops up for password fields,Gboard used for passwords instead,pass 2: test whether Gboard shows normally
 keep,13s Plus Key / Plus Mind & AI,com.aiunit.aon,Air gestures + Screen Attention,-,
 keep,13s Plus Key / Plus Mind & AI,com.android.hotwordenrollment.okgoogle,'Hey Google' voice training / hotword hook,-,personal choice
 keep,13s Plus Key / Plus Mind & AI,com.android.hotwordenrollment.xgoogle,"Same, second variant",-,
@@ -171,6 +170,7 @@ keep,Casting & file sharing,com.oplus.linker,Cross-device manager + drag-and-dro
 keep,Casting & file sharing,com.oplus.remotecontrol,Remote control / device control,-,My Devices depends on it
 keep,Casting & file sharing,com.oplus.vdc,Virtual device connection (screen cast uses it),-,cast depends on it
 keep,Casting & file sharing,com.qualcomm.wfd.service,Miracast / Wi-Fi Display to TVs,-,
+keep,Disable only (easy to switch back on),com.oplus.multiapp,App Cloner (two WhatsApps etc.),App cloning until re-enabled,can't be disabled on 16.0.7+ firmware
 keep,Google apps & features,com.android.bips,Built-in generic printer driver,Printing without a vendor plugin,personal choice
 keep,Kept by choice,com.android.chrome,Chrome,-,personal choice
 keep,Kept by choice,com.coloros.systemclone,System Cloner (second separate system),-,personal choice

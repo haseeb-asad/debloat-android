@@ -10,7 +10,7 @@ Tested on a 13s (CPH2723IN, 16.0.10.500). No root. Everything is reversible.
 
 | File | What |
 |---|---|
-| `list.csv` | Every package: `action` (remove / disable / later / keep), what it is, what you lose |
+| `list.csv` | Every package: `action` (remove / disable / after / keep), matching what was done on my phone, what it is, what you lose |
 | `apply.py` | Debloat or restore from `list.csv`; rolls back app updates first so storage is freed |
 | `bench.sh` + `sampler.sh` | Reboot and log CPU / RAM / swap once a second |
 | `compare.py` | Before vs after: AVG, P95, top 5%, peaks (same metrics as the original post) |
@@ -31,7 +31,7 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 - `com.oneplus.note`: notes saved only in OnePlus Notes are deleted; export or sync first.
 - `com.android.contacts` / `com.android.incallui` are the OnePlus Phone and Contacts apps. Set Google Phone, Contacts and Messages as defaults first.
 - `com.oneplus.gallery` is kept: removing it breaks opening photos from the camera.
-- `later` rows (secure keyboard, live wallpapers, a Qualcomm secure-zone helper) are untested; apply with `./apply.py debloat --later`.
+- `after` rows (secure keyboard, live wallpapers, a Qualcomm secure-zone helper) are the second round, not applied yet; apply with `./apply.py debloat --after`.
 - A factory reset brings everything back.
 
 ## Undo
@@ -42,7 +42,7 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 
 ## My results (13s, 10 min each, right after unlock, no factory reset)
 
-139 packages removed, 5 disabled; 537 -> 398 packages; about 1.3 GB storage freed.
+139 packages removed, 4 disabled; 537 -> 398 packages; about 1.3 GB storage freed.
 The benchmark was taken after the first 122 removals.
 CPU system -16% avg, CPU spikes (top 5%) -17 to -21%, RAM P95 -23%, RAM avg -4%. Most of the gain is in the first minute after boot.
 Full table in `results/comparison.txt`.

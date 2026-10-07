@@ -2,8 +2,8 @@
 """Debloat or restore a OnePlus phone over adb using list.csv.
 
   ./apply.py debloat            remove + disable rows (rolls back app updates first to free storage)
-  ./apply.py debloat --later    also apply the 'later' rows
-  ./apply.py restore            bring every remove/disable/later row back
+  ./apply.py debloat --after    also apply the 'after' rows (second-round tests)
+  ./apply.py restore            bring every remove/disable/after row back
   ./apply.py debloat --dry-run  show what would happen, change nothing
 """
 import csv, os, subprocess, sys
@@ -30,7 +30,7 @@ def main():
     if mode not in ("debloat", "restore"):
         sys.exit(__doc__)
     dry = "--dry-run" in sys.argv
-    actions = {"remove", "disable"} | ({"later"} if "--later" in sys.argv or mode == "restore" else set())
+    actions = {"remove", "disable"} | ({"after"} if "--after" in sys.argv or mode == "restore" else set())
     rows = [r for r in csv.DictReader(open(os.path.join(HERE, "list.csv"))) if r["action"] in actions]
     if "device" not in subprocess.run([ADB, "devices"], capture_output=True, text=True).stdout.split("\n", 1)[1]:
         sys.exit("No authorised device. Plug in the phone, enable USB debugging and accept the prompt.")
