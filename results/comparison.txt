@@ -1,0 +1,19 @@
+samples: before 600, after 600
+
+metric        stat                before     after    change
+cpu_user      AVG                   2.58      2.33     -9.7%
+cpu_user      P95                   9.24      8.24    -10.8%
+cpu_user      Top 5% avg           28.11     23.47    -16.5%
+cpu_user      Peaks (>0.5)          0.79      0.71    -10.0%
+cpu_sys       AVG                   4.22      3.56    -15.7%
+cpu_sys       P95                  12.86     11.95     -7.1%
+cpu_sys       Top 5% avg           31.80     24.98    -21.4%
+cpu_sys       Peaks (>1)            1.00      0.99     -0.8%
+ram_used_mb   AVG                4769.73   4575.08     -4.1%
+ram_used_mb   P95                6692.00   5177.00    -22.6%
+ram_used_mb   Top 5% avg         6810.70   6246.17     -8.3%
+ram_used_mb   Peaks (>4000)         0.96      0.92     -4.4%
+swap_used_mb  AVG                1787.17   1699.89     -4.9%
+swap_used_mb  P95                2175.00   2181.00     +0.3%
+swap_used_mb  Top 5% avg         2246.57   2233.90     -0.6%
+swap_used_mb  Peaks (>1500)         0.81      0.85     +5.2%
