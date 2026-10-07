@@ -56,7 +56,7 @@ def main():
                 if has_update(pkg):
                     sh(f"pm uninstall-system-updates {pkg}")
                 res = sh(f"pm disable-user --user 0 {pkg}") if act == "disable" else sh(f"pm uninstall --user 0 {pkg}")
-                status = "OK  " if ("Success" in res or "new state" in res) else "FAIL"
+                status = "OK  " if ("Success" in res or "disabled" in res) else "FAIL"
         ok += status == "OK  "; skipped += status == "SKIP"; failed += status == "FAIL"
         line = f"{status} {act:7} {pkg}  {res}"
         print(line); log.write(line + "\n")
