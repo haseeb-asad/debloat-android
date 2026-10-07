@@ -40,6 +40,17 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 - One app: `adb shell cmd package install-existing <pkg>` (removed) or `adb shell pm enable <pkg>` (disabled)
 - The 'OnePlus preinstalled apps (uninstallable)' group is fully deleted, so `restore` cannot bring it back. Reinstall from the store, or from the phone's factory copy: `adb shell ls /my_stock/del-app /my_product/del-app`, then `adb shell pm install -r --user 0 /my_stock/del-app/<Name>/<Name>.apk`
 
+## Other tweaks (no root)
+
+| Tweak | Command | Undo / notes |
+|---|---|---|
+| 0.5x animations | `adb shell settings put global window_animation_scale 0.5` (same for `transition_animation_scale`, `animator_duration_scale`) | Set back to `1`. Usually survives turning Developer options off; ADB itself needs it on. |
+| Ad-blocking DNS | `adb shell settings put global private_dns_mode hostname` then `adb shell settings put global private_dns_specifier dns.adguard-dns.com` | `private_dns_mode off`. If a hotel/cafe Wi-Fi login page won't load, turn Private DNS off briefly. |
+| Smaller UI (display density) | `adb shell wm density 440` (stock on the 13s is 560; Settings > Display size gives ~476) | `adb shell wm density reset`. Go in small steps; too low makes apps cramped. |
+| Delete Google ad ID | Not possible via ADB. `adb shell am start -a com.google.android.gms.settings.ADS_PRIVACY` opens the page; tap "Delete advertising ID" | - |
+| Block an app running in background | OnePlus blocks `cmd appops` from ADB. Use Settings > Apps > <app> > Battery usage > "Allow background activity" off, or enable "Disable permission monitoring" in Developer options and run `adb shell cmd appops set <pkg> RUN_ANY_IN_BACKGROUND ignore` | Notifications via Google push still arrive. |
+| Recompile apps | `adb shell cmd package compile -m speed-profile <pkg>` per app, then `adb shell cmd package bg-dexopt-job` | Same job Android runs overnight while charging; uses storage (~800 MB here). Only worth it right after a system update. |
+
 ## My results (13s, 10 min each, right after unlock, no factory reset)
 
 139 packages removed, 4 disabled; 537 -> 398 packages; about 1.3 GB storage freed.
