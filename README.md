@@ -42,7 +42,7 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 
 ## My results (13s, 10 min each, right after unlock, no factory reset)
 
-140 packages removed, 5 disabled; 537 -> 397 packages; about 1.3 GB storage freed.
+139 packages removed, 5 disabled; 537 -> 398 packages; about 1.3 GB storage freed.
 The benchmark was taken after the first 122 removals.
 CPU system -16% avg, CPU spikes (top 5%) -17 to -21%, RAM P95 -23%, RAM avg -4%. Most of the gain is in the first minute after boot.
 Full table in `results/comparison.txt`.
