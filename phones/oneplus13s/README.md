@@ -34,6 +34,14 @@ Set `ADB=/path/to/adb` if adb is not at `~/Library/Android/sdk/platform-tools/ad
 - `after` rows (secure keyboard, live wallpapers, a Qualcomm secure-zone helper) are the second round, not applied yet; apply with `./apply.py debloat --after`.
 - A factory reset brings everything back.
 
+## After the OxygenOS 17 update
+
+Checked on 17.0.0.101 (Android 17): every removal and disable survived the update.
+
+- `pm uninstall --user 0` can now fail with `only root can delete system app for a particular user`. Use `pm disable-user --user 0 <pkg>` for those.
+- Apps whose manifest has `ForbidUninstall` / `ForbidDisabled` (Tencent Soter, Intelligent Service Framework) can be neither removed nor disabled. `pm disable-user` prints `new state: default` and nothing changes. `pm suspend --user 0 <pkg>` still works and stops the app from running (undo: `pm unsuspend --user 0 <pkg>`).
+- Over Wi-Fi the phone can show up twice in `adb devices`. Run `export ANDROID_SERIAL=<ip>:<port>` before `./apply.py`.
+
 ## Undo
 
 - Everything: `./apply.py restore`

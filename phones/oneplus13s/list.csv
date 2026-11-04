@@ -24,7 +24,7 @@ remove,"Carrier, SIM & regional",com.oplus.virtualcomm,Virtual SIM / call sharin
 remove,"Carrier, SIM & regional",com.oplus.virtualcomm2,Second part of the above,Same,
 remove,"Carrier, SIM & regional",com.redteamobile.roaming,Sells travel roaming data plans (already disabled),Roaming data shop,
 remove,"Carrier, SIM & regional",com.wapi.wapicertmanage,China-only WAPI Wi-Fi certificates,Nothing outside China,
-remove,Factory & test tools,com.android.cts.ctsshim,Google certification test stub,Nothing,
+disable,Factory & test tools,com.android.cts.ctsshim,Google certification test stub,Nothing,"OxygenOS 17 refuses to uninstall it, so disabled instead"
 remove,Factory & test tools,com.android.devicediagnostics,Device diagnostics tool,Built-in hardware diagnostics,
 remove,Factory & test tools,com.android.egg,Android version easter egg (tap version number),The easter egg,
 remove,Factory & test tools,com.android.microdroid.empty_payload,Virtual machine test payload,Nothing,
@@ -158,9 +158,14 @@ keep,13s Plus Key / Plus Mind & AI,com.oplus.android.overlay.aifunction.common,O
 keep,13s Plus Key / Plus Mind & AI,com.oplus.deepthinker,AI context engine,-,
 keep,13s Plus Key / Plus Mind & AI,com.oplus.metis,Plus Key uses it,-,
 keep,13s Plus Key / Plus Mind & AI,com.oplus.smartengine,Smart suggestions engine,-,
+keep,13s Plus Key / Plus Mind & AI,com.coloros.baseocrscanner,OSee services; added in OxygenOS 17,Screen text recognition (com.coloros.ocrscanner) needs it,
+after,13s Plus Key / Plus Mind & AI,com.oplus.aiassistant,"Mind Pilot, OnePlus AI agent; added in OxygenOS 17",Mind Pilot,undecided
+after,13s Plus Key / Plus Mind & AI,com.oplus.matrix,"Agent Framework, most likely what Mind Pilot runs on; added in OxygenOS 17",Mind Pilot,undecided
 keep,Can't be removed with adb,com.heytap.htms,OnePlus Mobile Services,-,author: errors
 keep,Can't be removed with adb,com.oplus.aiunit,AI Service Engine (Plus Mind needs it),-,author: errors
 keep,Can't be removed with adb,com.oplus.cosa,App Enhancement Services (Game Bar needs it),-,author: errors
+keep,Can't be removed with adb,com.tencent.soter.soterserver,Tencent fingerprint payments (WeChat Pay); added in OxygenOS 17,WeChat Pay fingerprint,"Marked ForbidUninstall / ForbidDisabled; suspended instead: pm suspend --user 0 (undo: pm unsuspend)"
+keep,Can't be removed with adb,com.nearme.instant.card,Intelligent Service Framework: widget / card engine and app recommendations; added in OxygenOS 17,Cards and widgets,Marked ForbidUninstall / ForbidDisabled; near-zero battery
 keep,Casting & file sharing,com.heytap.accessory,Device connection + Find My for accessories,-,Share and My Devices depend on it
 keep,Casting & file sharing,com.heytap.mydevices,My Devices,-,
 keep,Casting & file sharing,com.oneplus.oshare,O+ Connect / Share,-,personal choice
@@ -182,6 +187,7 @@ keep,Kept by choice,com.oplus.aiwriter,AI Writer,-,personal choice
 keep,Kept by choice,com.oplus.games,Games + Game Bar,-,Game Bar; hard to restore per commenters
 keep,Kept by choice,com.oplus.phonemanager,"Phone Manager (cleaner, permissions)",-,personal choice
 keep,Kept by choice,net.oneplus.weather,OnePlus Weather,-,personal choice
+keep,Kept by choice,com.oplus.tips,Tips; pushed in by the OxygenOS 17 updater,Tips,
 keep,Look & feel,com.google.android.overlay.modules.captiveportallogin.forframework,Config for the hotel Wi-Fi login page,Author tested fine; restore if hotel Wi-Fi login stops popping up,personal choice
 keep,Look & feel,com.oplus.audio.effectcenter,Sound effects / audio tuning,-,
 keep,Look & feel,com.oplus.eyeprotect,Eye Comfort / night filter,-,
@@ -199,6 +205,7 @@ keep,Needed by your other apps,com.google.ar.core,Google Play Services for AR,-,
 keep,Needed by your other apps,com.oplus.location,OnePlus location service,-,
 keep,Needed by your other apps,com.oplus.locationproxy,OnePlus location proxy,-,
 keep,Needed by your other apps,com.qualcomm.location,Qualcomm GPS assist,-,
+keep,Needed by your other apps,com.oplus.colorx,"""Graphics Enhancement Service"": despite the name, lets the Games app update Game Assistant through Play Store",Game Assistant update prompts,OxygenOS 17 name for com.oneplus.colorx
 keep,OnePlus account & cloud,com.heytap.cloud,OnePlus Cloud,-,
 keep,OnePlus account & cloud,com.oneplus.account,OnePlus account,-,personal choice
 keep,OnePlus preinstalled apps (uninstallable),andes.oplus.documentsreader,OnePlus document/PDF reader,-,personal choice
