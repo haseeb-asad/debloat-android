@@ -1,0 +1,31 @@
+action,group,package,what_it_is,if_removed_you_lose,notes
+remove,TCL telemetry & promos,com.tcl.bi,TCL analytics / usage reporting (2 background processes),Nothing visible,
+remove,TCL telemetry & promos,com.tcl.messagebox,TCL promo / notification inbox,TCL messages,
+remove,TCL telemetry & promos,com.tcl.overseasappshow,App promotions,Promoted-app tiles,
+remove,TCL telemetry & promos,com.tcl.esticker,Shop-floor energy / feature sticker,Nothing at home,
+remove,TCL apps,com.tcl.smartalexa,Alexa,Alexa voice control,
+remove,TCL apps,com.tcl.notereminder,Reminder app,On-screen reminders,
+remove,TCL apps,com.tcl.guard,T-Guard cleaner / antivirus tile,T-Guard and its memory-clean shortcut,
+remove,TCL apps,com.tcl.miracast,Miracast wireless display,Screen mirroring from Windows / Android (Chromecast is separate and kept),
+remove,Google apps,com.google.android.youtube.tvmusic,YouTube Music,YouTube Music app,
+after,TCL apps,com.tcl.usercenter,TCL account,TCL account sign-in,undecided
+after,TCL apps,com.tcl.tv.tclhome_master,TCL Home smart-home control,Controlling the TV from the TCL Home phone app,undecided
+after,TCL apps,com.tcl.tv.tclhome_passive,TCL Home smart-home control (background half),Same as above,undecided
+after,TCL apps,com.tcl.waterfall.overseas,TCL Channel free streaming,TCL Channel,undecided
+after,TCL apps,com.tcl.MultiScreenInteraction_TV,Casting through TCL's own phone app,TCL phone-app casting (Chromecast is separate and kept),undecided
+after,Google apps,com.google.android.play.games,Play Games,Play Games profile / achievements,undecided
+keep,Casting,com.google.android.apps.mediashell,Chromecast built-in,Casting from phone / Chrome,used
+keep,Google core,com.google.android.katniss,Google Assistant / search,Search tab on the home screen,microphone permission revoked instead; see README
+keep,Google core,com.android.vending,Play Store,App installs and updates,
+keep,Google core,com.google.android.gms,Google Play services,Most Google and many third-party apps,
+keep,Google core,com.google.android.tvlauncher,Home screen,The home screen,
+keep,TV core,com.tcl.tv,Live TV,Tuner / live TV,
+keep,TV core,com.tcl.tvinput,HDMI and other inputs,All inputs,
+keep,TV core,com.tcl.settings,Picture / sound settings,TV settings,
+keep,TV core,com.tcl.systemserver,TCL system service,The TV,
+keep,TV core,com.tcl.keycustomfunctionservice,Remote key handling,Remote buttons,
+keep,TV core,com.tcl.autopair,Remote pairing,Bluetooth remote,
+keep,TV core,com.tcl.partnercustomizer,Home screen layout config,Home screen rows,
+keep,TV core,com.tcl.ui_mediaCenter,USB media player,Playing files from USB,
+keep,TV core,com.tcl.versionUpdateApp,System update,Firmware updates,
+keep,TV core,com.tcl.xian.StartandroidService,TCL device authentication,Possibly firmware updates,not tested
