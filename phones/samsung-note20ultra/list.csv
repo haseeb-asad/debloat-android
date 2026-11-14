@@ -1,0 +1,61 @@
+action,group,package,what_it_is,if_removed_you_lose,notes
+remove,AT&T,com.att.iqi,AT&T IQ agent: network and usage diagnostics sent to AT&T,Nothing,telemetry
+remove,AT&T,com.dti.att,Digital Turbine: AT&T's silent app installer,Nothing; stops pushed app installs,
+remove,AT&T,com.synchronoss.dcs.att.r2g,AT&T Ready2Go setup and content transfer,Nothing after setup,
+remove,AT&T,com.att.dh,AT&T Device Help,AT&T support app,
+remove,AT&T,com.att.csoiam.mobilekey,AT&T ID sign-in,AT&T account sign-in,
+remove,AT&T,com.att.android.attsmartwifi,AT&T Smart Wi-Fi: auto-joins AT&T hotspots,Nothing outside the US,
+remove,AT&T,com.sec.android.app.ewidgetatt,AT&T widget,AT&T widget,
+remove,AT&T,com.att.callprotect,AT&T Call Protect,Nothing (was disabled),
+remove,AT&T,com.att.mobilesecurity,AT&T Mobile Security,Nothing (was disabled),
+remove,AT&T,com.att.myWireless,myAT&T,Nothing (was disabled),
+remove,AT&T,com.att.personalcloud,AT&T Personal Cloud,Nothing (was disabled),
+remove,AT&T,com.att.tv,AT&T TV,Nothing (was disabled),
+remove,AT&T,com.samsung.vvm,Visual voicemail for US carriers,Nothing on Telenor,opened 7 times this year; owner chose remove
+remove,AT&T,com.hiya.star,Hiya caller ID and spam check for the US build,Caller ID / spam labels in the Phone app,
+keep,AT&T,com.ws.dm,AT&T software update client,System updates,do not remove
+remove,Preload installers,com.facebook.appmanager,Facebook app updater,Nothing; Facebook updates from Play Store,
+remove,Preload installers,com.facebook.system,Facebook app installer,Nothing,
+remove,Preload installers,com.amazon.appmanager,Amazon app installer,Nothing,
+remove,Samsung telemetry,com.samsung.android.dqagent,Device quality agent: usage reports to Samsung,Nothing,
+remove,Samsung telemetry,com.sec.android.diagmonagent,Diagnostic monitor: error reports to Samsung,Error reports in Samsung Members,
+remove,Samsung telemetry,com.samsung.android.knox.analytics.uploader,Knox analytics uploader,Nothing,
+remove,Samsung telemetry,com.samsung.android.rubin.app,Customization Service: builds a usage profile,Personalised suggestions,
+remove,Samsung telemetry,com.samsung.android.ipsgeofence,Location-based Samsung visit and offers service,Nothing,
+remove,Bixby,com.samsung.android.bixby.agent,Bixby Voice,Bixby voice,side key can open Bixby; set it to power menu in Settings > Advanced features > Side key
+remove,Bixby,com.samsung.android.bixby.wakeup,"""Hi Bixby"" wake word",Wake word,
+remove,Bixby,com.samsung.android.app.settings.bixby,Bixby settings,Bixby settings,
+remove,Bixby,com.samsung.systemui.bixby2,Bixby hooks in system UI,Nothing,
+remove,Bixby,com.samsung.android.app.spage,Samsung Free (left home screen page),Samsung Free page,
+remove,Samsung apps,com.samsung.android.aremoji,AR Emoji,AR Emoji,
+remove,Samsung apps,com.samsung.android.aremojieditor,AR Emoji editor,AR Emoji,
+remove,Samsung apps,com.samsung.android.ardrawing,AR Doodle,AR Doodle,
+remove,Samsung apps,com.samsung.android.app.camera.sticker.facearavatar.preload,AR Emoji camera stickers,AR stickers,
+remove,Samsung apps,com.sec.android.mimage.avatarstickers,AR Emoji stickers,AR stickers,
+remove,Samsung apps,com.samsung.android.kidsinstaller,Samsung Kids installer,Samsung Kids,
+remove,Samsung apps,com.samsung.android.mateagent,Galaxy Friends,Nothing,
+remove,Samsung apps,com.samsung.android.coldwalletservice,Blockchain keystore,Crypto wallet key storage,
+remove,Samsung apps,com.samsung.android.carkey,Digital car key,Car key,
+remove,Samsung apps,com.samsung.android.dkey,Digital key framework,Car key,
+remove,Samsung apps,com.samsung.android.spayfw,Samsung Pay framework,Samsung Pay (not offered in Pakistan),
+remove,Samsung apps,com.samsung.android.smartswitchassistant,Smart Switch helper,Nothing (Smart Switch is disabled),
+remove,Samsung apps,com.sec.android.easyMover.Agent,Smart Switch agent,Nothing (Smart Switch is disabled),
+remove,Samsung apps,com.samsung.android.service.peoplestripe,People edge panel,People edge panel,
+remove,Samsung apps,com.samsung.storyservice,Gallery auto stories,Auto stories in Gallery,
+remove,Samsung apps,com.diotek.sec.lookup.dictionary,Offline dictionary,Dictionary lookup,
+remove,Samsung apps,com.samsung.sree,Global Goals,Nothing,
+remove,Google apps,com.google.android.apps.tachyon,Google Meet (Duo),Meet,
+keep,Samsung apps,com.samsung.android.visionintelligence,Bixby Vision,Bixby Vision in camera and gallery,camera and gallery features
+remove,Samsung apps,com.samsung.android.voc,Samsung Members,Samsung Members,never opened
+remove,Samsung apps,com.sec.android.app.sbrowser,Samsung Internet,Samsung Internet browser,Chrome is the default browser; used 9 seconds this year
+keep,Samsung apps,com.samsung.android.app.appsedge,Apps edge panel,Edge panel,turn off in Settings > Display > Edge panels
+keep,Samsung apps,com.samsung.android.app.taskedge,Tasks edge panel,Edge panel,turn off in Settings > Display > Edge panels
+keep,Samsung apps,com.samsung.android.app.clipboardedge,Clipboard edge panel,Edge panel,turn off in Settings > Display > Edge panels
+keep,Google apps,com.google.android.youtube,YouTube,YouTube app,owner keeps it
+keep,Preload installers,com.microsoft.skydrive,OneDrive,OneDrive,a Microsoft account is signed in
+keep,Samsung core,com.sec.android.soagent,Samsung update agent,Updates,
+keep,Samsung core,com.samsung.android.app.omcagent,Carrier config agent,Carrier settings,
+keep,Samsung core,com.microsoft.appmanager,Link to Windows,Link to Windows tile,
+keep,Samsung core,com.samsung.android.bixbyvision.framework,Vision framework,Camera scene / QR features,
+keep,Samsung core,com.samsung.android.game.gos,Game Optimizing Service,Removing it breaks some games,
+keep,Samsung core,com.sec.unifiedwfc,Wi-Fi calling,Wi-Fi calling,
