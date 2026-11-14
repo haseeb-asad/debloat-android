@@ -6,6 +6,7 @@ Reversible unless a device README says otherwise.
 | Device | Folder |
 |---|---|
 | OnePlus 13s (OxygenOS 16 and 17) | [`phones/oneplus13s/`](phones/oneplus13s/) |
+| Samsung Galaxy Note 20 Ultra, AT&T firmware (Android 12) | [`phones/samsung-note20ultra/`](phones/samsung-note20ultra/) |
 | TCL Android TV (BeyondTV, Android 11) | [`tvs/tcl-beyondtv/`](tvs/tcl-beyondtv/) |
 
 ## Use
